@@ -7,6 +7,14 @@ public class Station {
     String identifiant;
     String libelle;
 
+    public Station() {
+    }
+
+    public Station(String libelle, String identifiant) {
+        this.libelle = libelle;
+        this.identifiant = identifiant;
+    }
+
     public String getIdentifiant() {
         return identifiant;
     }
