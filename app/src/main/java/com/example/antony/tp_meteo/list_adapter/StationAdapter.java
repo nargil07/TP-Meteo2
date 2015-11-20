@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
+import com.example.antony.tp_meteo.R;
 import com.example.antony.tp_meteo.metier.Station;
 
 import java.util.ArrayList;
@@ -40,6 +42,20 @@ public class StationAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        return null;
+        StationViewHolder holder;
+        if(convertView == null){
+            convertView =layoutInflater.inflate(R.layout.elem_station, null);
+            holder = new StationViewHolder();
+            holder.tvIdentifiant = (TextView) convertView.findViewById(R.id.textView_identifiant);
+            holder.tvLibelle = (TextView) convertView.findViewById(R.id.textView_libelle);
+            convertView.setTag(holder);
+        }else{
+            holder = (StationViewHolder) convertView.getTag();
+        }
+
+        holder.tvIdentifiant.setText(listStation.get(position).getIdentifiant());
+        holder.tvLibelle.setText(listStation.get(position).getLibelle());
+
+        return convertView;
     }
 }

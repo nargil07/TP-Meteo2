@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.example.antony.tp_meteo.list_adapter.StationAdapter;
 import com.example.antony.tp_meteo.metier.Station;
 
 import java.util.ArrayList;
@@ -21,5 +22,6 @@ public class ListStationActivity extends AppCompatActivity {
         list_station.add(new Station("Albousiere", "Les station du nord"));
 
         listView_station = (ListView) findViewById(R.id.listView_station);
+        listView_station.setAdapter(new StationAdapter(list_station, this));
     }
 }
