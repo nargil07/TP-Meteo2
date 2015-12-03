@@ -17,8 +17,6 @@
         </activity>
         <activity android:name=".ListStationActivity" >
         </activity>
-        <activity android:name=".ListMesureActivity" >
-        </activity>
     </application>
 
 </manifest>
