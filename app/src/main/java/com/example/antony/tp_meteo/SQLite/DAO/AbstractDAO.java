@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 import com.example.antony.tp_meteo.SQLite.MeteoOpenHelper;
 import com.example.antony.tp_meteo.SQLite.SQLiteConstante;
 
+import org.json.JSONObject;
+
 /**
  * Created by antony on 04/12/2015.
  */
@@ -23,9 +25,9 @@ public abstract class AbstractDAO<T> implements SQLiteConstante{
 
     public void close(){ bdd.close(); }
 
-    public T getById(String id){
-        bdd.
-    }
+    public abstract T getById(String id);
+
+    public abstract void insertByJson(JSONObject jsonObject);
 
 
 }
