@@ -12,7 +12,7 @@ import org.json.JSONObject;
  * Created by antony on 04/12/2015.
  */
 public abstract class AbstractDAO<T> implements SQLiteConstante{
-    private SQLiteDatabase bdd;
+    protected SQLiteDatabase bdd;
     private MeteoOpenHelper maBase;
 
     public AbstractDAO(Context context) {
@@ -28,6 +28,8 @@ public abstract class AbstractDAO<T> implements SQLiteConstante{
     public abstract T getById(String id);
 
     public abstract void insertByJson(JSONObject jsonObject);
+
+    public abstract void add(T entity);
 
 
 }

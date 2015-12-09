@@ -7,18 +7,16 @@ import java.util.List;
 /**
  * Created by antony on 19/11/2015.
  */
-public class Station implements Serializable{
+public class Station implements Serializable {
     String identifiant;
     String libelle;
-    ArrayList<Mesure> mesureList;
 
     public Station() {
     }
 
-    public Station(String libelle, String identifiant, ArrayList<Mesure> mesureList) {
+    public Station(String libelle, String identifiant) {
         this.libelle = libelle;
         this.identifiant = identifiant;
-        this.mesureList = mesureList;
     }
 
     public String getIdentifiant() {
@@ -35,13 +33,5 @@ public class Station implements Serializable{
 
     public void setLibelle(String libelle) {
         this.libelle = libelle;
-    }
-
-    public ArrayList<Mesure> getMesureList() {
-        return mesureList;
-    }
-
-    public void setMesureList(ArrayList<Mesure> mesureList) {
-        this.mesureList = mesureList;
     }
 }

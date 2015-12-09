@@ -43,7 +43,7 @@ public class ListStationActivity extends AppCompatActivity {
         gridView_station.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                StationAdapter stationAdapter = (StationAdapter) parent.getAdapter();
+                StationGridAdapter stationAdapter = (StationGridAdapter) parent.getAdapter();
                 Intent i = new Intent(getApplicationContext(), ListMesureActivity.class);
                 i.putExtra("station", stationAdapter.getItem(position));
                 startActivity(i);
