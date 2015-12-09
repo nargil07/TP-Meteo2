@@ -1,4 +1,4 @@
-package com.example.antony.tp_meteo.metier;
+package com.example.antony.tp_meteo.entity;
 
 import java.io.Serializable;
 

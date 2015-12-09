@@ -1,0 +1,8 @@
+com.example.antony.tp_meteo
+com.example.antony.tp_meteo.SQLite
+com.example.antony.tp_meteo.SQLite.DAO
+com.example.antony.tp_meteo.entity
+com.example.antony.tp_meteo.exception
+com.example.antony.tp_meteo.grid_adapter
+com.example.antony.tp_meteo.list_adapter
+com.example.antony.tp_meteo.metier

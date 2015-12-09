@@ -21,3 +21,12 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+task generateJavadoc(type: Javadoc) {
+    title = "Javadoc TP-meteo"
+    description "La javadoc de mon projet"
+    failOnError = false
+    source = "TP-Meteo2"
+    options.charSet = "UTF-8"
+    destinationDir = new File("build/target/javadoc")
+}

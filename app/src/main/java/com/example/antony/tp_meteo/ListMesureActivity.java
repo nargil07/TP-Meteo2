@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.example.antony.tp_meteo.list_adapter.MesureAdapter;
-import com.example.antony.tp_meteo.metier.Station;
+import com.example.antony.tp_meteo.entity.Station;
 
 public class ListMesureActivity extends AppCompatActivity {
 

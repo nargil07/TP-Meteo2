@@ -13,8 +13,8 @@ import android.widget.ListView;
 
 import com.example.antony.tp_meteo.grid_adapter.StationGridAdapter;
 import com.example.antony.tp_meteo.list_adapter.StationAdapter;
-import com.example.antony.tp_meteo.metier.Mesure;
-import com.example.antony.tp_meteo.metier.Station;
+import com.example.antony.tp_meteo.entity.Mesure;
+import com.example.antony.tp_meteo.entity.Station;
 
 import java.util.ArrayList;
 

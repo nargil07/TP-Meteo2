@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.antony.tp_meteo.R;
-import com.example.antony.tp_meteo.metier.Station;
+import com.example.antony.tp_meteo.entity.Station;
 
 import java.util.ArrayList;
 

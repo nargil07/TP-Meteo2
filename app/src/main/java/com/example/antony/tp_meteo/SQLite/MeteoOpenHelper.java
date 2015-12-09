@@ -10,7 +10,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class MeteoOpenHelper extends SQLiteOpenHelper implements SQLiteConstante{
     private static final String CREATE_TABLE_STATION = TABLE_STATION + " (" + TABLE_STATION_CHAMP_ID +
             " TEXT NOT NULL PRIMARY KEY, " +
-            TABLE_STATION_CHAMP_LIBELLE + " TEXT NOT NULL);";
+            TABLE_STATION_CHAMP_LIBELLE + " TEXT NOT NULL, " +
+            TABLE_STATION_CHAMP_DATE + " REAL);";
 
     public MeteoOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
